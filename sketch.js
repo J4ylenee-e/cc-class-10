@@ -2,6 +2,7 @@
 let para
 let slider
 let sliderValue = 16
+let link
 function setup() {
   createCanvas(windowWidth, windowHeight);
   // Help blind or low-vision users understand your sketch
@@ -19,6 +20,9 @@ function setup() {
   slider.position(0,40)
   slider.changed(sliderChanged)
   
+  //createA(href, html, [target])
+  link = createA('https://en.wikipedia.org/wiki/Dog','Dog', '_blank')
+  link.position(0,80)
 }
 
 function draw() {
